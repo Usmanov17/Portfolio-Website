@@ -1,0 +1,1 @@
+web: gunicorn usmanov.wsgi --log-file -

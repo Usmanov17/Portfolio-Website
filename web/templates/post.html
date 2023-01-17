@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+<div class="main-container">
+    <img class="post_img" src="{{post.image.url}}">
+    <div style="text-align:center;">
+        <h1>{{post.headline}}</h1>
+
+        <h4>{{post.subheadline}}</h4>
+
+        <p>{{post.body|safe}}</p>
+    </div>
+</div>
+{% endblock content %}
